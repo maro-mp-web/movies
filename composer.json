@@ -1,0 +1,18 @@
+{
+    "name": "movies/movies",
+    "description": "A WordPress plugin for managing movies.",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": "^8.1.9",
+        "guzzlehttp/guzzle": "^7.3",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Movies\\Plugin\\": "",
+            "Movies\\PostType\\": "PostType/",
+            "Movies\\QSS\\Client\\": "QSS/Client/",
+            "Dotenv\\": "vendor/vlucas/phpdotenv/src/"
+        }
+    }
+}
